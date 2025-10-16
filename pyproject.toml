@@ -1,0 +1,25 @@
+[project]
+name = "api_kids_abb"
+version = "0.1.0"
+description = "FastAPI service: api_kids_abb"
+readme = "README.md"
+requires-python = ">=3.12"
+authors = [{ name = "Your Name", email = "you@example.com" }]
+
+[tool.black]
+line-length = 88
+target-version = ["py312"]
+
+[tool.isort]
+profile = "black"
+line_length = 88
+
+[tool.flake8]
+max-line-length = 88
+extend-ignore = ["E203", "W503"]
+
+[tool.mypy]
+python_version = "3.12"
+warn_unused_configs = true
+ignore_missing_imports = true
+strict = false
